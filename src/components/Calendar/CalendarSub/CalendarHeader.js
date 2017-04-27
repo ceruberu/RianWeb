@@ -1,4 +1,4 @@
-import React, { Component, PropTypes } from "react";
+import React, { Component } from "react";
 import { Glyphicon } from "react-bootstrap";
 import { Calendar as calen } from "calendar";
 

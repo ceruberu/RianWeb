@@ -1,4 +1,4 @@
-import React, { Component, PropTypes } from "react";
+import React, { Component } from "react";
 import { connect } from "react-redux";
 import classNames from "classnames";
 import { planUpdateComplete } from "../../../actions/PlanActions";
@@ -20,7 +20,7 @@ export default class CalendarMonth extends Component {
 					week: day.week === week
 				})
       	return ( 
-      		<div className={dayClass} key={`${day.year}${day.month}${day.day}`}>
+      		<div className={dayClass} key={`${day.month}-${day.day}`}>
       			{day.day}
       		</div>
       		)
