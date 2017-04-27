@@ -1,6 +1,8 @@
 import moment from "moment";
 
 export function renderTime(year, month){
+  // day === undefined or day
+
   const firstDay = new Date(year, month, 1);
   const firstDayDay = firstDay.getDay(); // 0 = sun, 1 = mon, 2 = tues, 
   // 5나 6이면 앞에만 더하고, 아니면 앞에 더하고 앞에 한주 더 추가
@@ -24,6 +26,7 @@ export function renderTime(year, month){
     }
     timeArray.push(weekArray);
   }
+  console.log("RENDERTIME: ", timeArray);
   return timeArray;
 }
 
