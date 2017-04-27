@@ -20,8 +20,6 @@ const firstMonthDays = renderTime(currentYear, currentMonth);
 let firstDayOfMonth = firstMonthDays[0][0];
 let firstDay = new Date(firstDayOfMonth.year, firstDayOfMonth.month, firstDayOfMonth.day-1);
 let currentWeek = getCurrentWeek(firstDay, currentDate);
-
-console.log("CALENDAR REDUCER: ", firstMonthDays, currentWeek);
 var CalendarState = {
   kind: "month",
   loading: false,
